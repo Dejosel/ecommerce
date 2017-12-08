@@ -80,11 +80,12 @@ textarea{
 .foot-card>:not(:last-child) {
   margin-right: .25rem;
 }
+
+.paddingt{
+  padding-top: 15px !important;
+}
 @media (min-width: 990px) {
   .carousel {
     padding-top: 30px;
   }
-  .card-deck{
-   flex-flow: row wrap; 
- }
 }

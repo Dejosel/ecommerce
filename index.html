@@ -13,26 +13,28 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 </head>
 <body>
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">E-commerce</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">E-commerce</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Inicio </a>
-        </li>
-      </ul>
-      <ul class="navbar-nav justify-content-end">
-        <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fa fa-shopping-bag"></i> Canasta <span class="badge badge-pill badge-danger">3</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Salir </a>
-        </li>        
-      </ul>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Inicio </a>
+          </li>
+        </ul>
+        <ul class="navbar-nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa fa-shopping-bag"></i> Canasta <span class="badge badge-pill badge-danger">3</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Salir </a>
+          </li>        
+        </ul>
+      </div>
     </div>
   </nav>
   <div class="container">  
@@ -201,10 +203,10 @@
           </div>
           <div class="container-fluid">
             <div class="row">
-              <div class="col-sm-7">
+              <div class="col-sm-6">
                 <img src="assets/images/camiseta-1.jpg" class="img-thumbnail float-left" alt="camiseta">    
               </div> 
-              <div class="col-sm-5">        
+              <div class="col-sm-6">        
                 <p>Precio: $199</p>
                 <p>Calificación: 
                   <i class="tooltip-test fa fa-star" aria-hidden="true" title="Muy Buena"></i>
@@ -218,7 +220,7 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-sm-12">
+              <div class="col-sm-12" style="padding-top: 15px;">
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs" role="tablist">
                   <li class="nav-item">
@@ -231,8 +233,8 @@
 
                 <!-- Tab panes -->
                 <div class="tab-content">
-                  <div class="card tab-pane active" id="home" role="tabpanel">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <div class="tab-pane active" id="home" role="tabpanel">
+                    <p style="padding-top: 15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                   </div>
                   <div class="tab-pane" id="profile" role="tabpanel">
                     <div class="card">
@@ -245,7 +247,8 @@
                         </blockquote>
                       </div>
                     </div>
-                    <textarea rows="4" cols="59" placeholder="Ingresa tu comentario"></textarea>
+                    <textarea class="form-control" rows="3" placeholder="Ingresa tu comentario..."></textarea>
+                    <button type="button" class="btn btn-outline-success"  style="margin-top: 15px;">Comentar</button>
                   </div>                 
                 </div>              
               </div>
